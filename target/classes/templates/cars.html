@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<div>Cars table</div>
+<div>
+    <table border="1">
+        <tr>
+            <th>brand</th>
+            <th>color</th>
+            <th>series</th>
+        </tr>
+        <tr th:each ="element : ${cars}">
+            <td th:utext="${element.brand}"></td>
+            <td th:utext="${element.color}"></td>
+            <td th:utext="${element.series}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
+
+
